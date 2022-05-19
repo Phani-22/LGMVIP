@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "262751818325",
+    "project_id": "facedetection-fc767",
+    "storage_bucket": "facedetection-fc767.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262751818325:android:85cf3a7f6f764456d23adc",
+        "android_client_info": {
+          "package_name": "com.phani.facedetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262751818325-vlt73l9b6caqibfm6rhm38c9vq44cdae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZOEQTKgYHtIl-havX6nXy4j-Dv0xMClg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262751818325-vlt73l9b6caqibfm6rhm38c9vq44cdae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
