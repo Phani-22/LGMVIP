@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/curStateItemCL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@drawable/cases_card"
+    app:cardCornerRadius="5dp"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/arrow"
+        android:src="@drawable/arrow_upward"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="viewMore"/>
+
+    <TextView
+        android:id="@+id/placeNameTV"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Place Name"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_weight="5"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Active  :  "
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/activeCasesTV"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/placeNameTV" />
+
+    <TextView
+        android:id="@+id/activeCasesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:fontFamily="@font/poppins_bold"
+        android:text="212121"
+        android:textColor="#0000FF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toEndOf="@id/activeLabel"
+        app:layout_constraintTop_toBottomOf="@id/placeNameTV" />
+
+    <TextView
+        android:id="@+id/confirmedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Confirmed  :  "
+        android:textAlignment="textEnd"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/confirmedCasesTV"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/placeNameTV" />
+
+    <TextView
+        android:id="@+id/confirmedCasesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:fontFamily="@font/poppins_bold"
+        android:text="212121"
+        android:textColor="#0000FF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/confirmedLabel"
+        app:layout_constraintTop_toBottomOf="@id/placeNameTV" />
+
+    <TextView
+        android:id="@+id/recoveredLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Recovered  :  "
+        android:textColor="@color/my_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/recoveredCasesTV"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activeLabel" />
+
+    <TextView
+        android:id="@+id/recoveredCasesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:fontFamily="@font/poppins_bold"
+        android:text="2121"
+        android:textColor="#33691E"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/recoveredLabel"
+        app:layout_constraintTop_toBottomOf="@id/activeLabel" />
+
+    <TextView
+        android:id="@+id/deceasedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Deceased:"
+        android:textColor="@color/my_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/deceasesCasesTV"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/recoveredCasesTV"
+        app:layout_constraintTop_toBottomOf="@id/activeLabel" />
+
+    <TextView
+        android:id="@+id/deceasesCasesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:fontFamily="@font/poppins_bold"
+        android:text="21"
+        android:textColor="#B71C1C"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/deceasedLabel"
+        app:layout_constraintTop_toBottomOf="@id/activeLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
